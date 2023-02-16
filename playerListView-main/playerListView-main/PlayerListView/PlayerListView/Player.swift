@@ -7,11 +7,11 @@
 
 import Foundation
 
-let playersData = [Player(name: "John Terry", imageName: "jt", bio: "Career:\n" +
+var playersData = [Player(name: "John Terry", imageName: "jt", bio: "Career:\n" +
         "• Main Club - Chelsea  \n" +
         "• Position - Centre-back\n " +
         "• England Caps - 58\n"),
-                   Player(name: "Alan Shearer", imageName: "shearer", bio: "Career:\n" +
+                   Player(name: "Alan Shearer", imageName: "sheare", bio: "Career:\n" +
                               "• Main Clubs - Southampton, Blackburn Rovers, Newcastle United  \n" +
                               "• Position - Striker\n " +
                               "• England Caps - 63\n"),

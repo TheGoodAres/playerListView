@@ -8,40 +8,23 @@
 import SwiftUI
 
 struct PlayerListView: View {
-    @State var showPopOver: Bool = false
-    @ObservedObject var players = PlayerList()
+    
     var body: some View {
+        var players:[Player] = playersData
         HStack {
-            NavigationStack{
-                NavigationView {
-                    List(players.playerList) { listedPlayer in
-                        NavigationLink(destination: PlayerDataView(player: listedPlayer)) {
-                            HStack{
-                                Image("\(listedPlayer.imageName)")
-                                    .resizable()
-                                    .frame(width: 150, height: 150.0)
-                                    .cornerRadius(400)
-                                Text("\(listedPlayer.name)")
-                                
-                            }
-                        }
+            NavigationView {
+                List(players) { listedPlayer in
+                    NavigationLink(destination: PlayerDataView(player: listedPlayer)) {
+                        Text("\(listedPlayer.name)")
                     }
-                }.navigationTitle("Top EPL Players")
-                    .toolbar {
-                        Button("Add") {
-                            showPopOver = true
-                        }
-                        .popover(isPresented: $showPopOver) {
-                            addPlayer()
-                        }
-                    }
+                }
             }
-            
+            .navigationTitle("Top EPL Players")
         }
     }
 }
 
-//table list refreshing
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         PlayerListView()
