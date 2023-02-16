@@ -16,6 +16,9 @@
 		08525D4729952C4700E00B67 /* PlayerListViewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08525D4629952C4700E00B67 /* PlayerListViewUITestsLaunchTests.swift */; };
 		08525D5429952F5600E00B67 /* PlayerDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08525D5329952F5600E00B67 /* PlayerDataView.swift */; };
 		08525D5629952FAF00E00B67 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08525D5529952FAF00E00B67 /* Player.swift */; };
+		DA09A33D299541EE00DF2DCE /* addPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA09A33C299541EE00DF2DCE /* addPlayer.swift */; };
+		DA09A34329954D6800DF2DCE /* PlayerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA09A34229954D6800DF2DCE /* PlayerList.swift */; };
+		DA788497299E79A60024F507 /* TestPopOver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA788496299E79A60024F507 /* TestPopOver.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,9 @@
 		08525D4629952C4700E00B67 /* PlayerListViewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerListViewUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		08525D5329952F5600E00B67 /* PlayerDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDataView.swift; sourceTree = "<group>"; };
 		08525D5529952FAF00E00B67 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		DA09A33C299541EE00DF2DCE /* addPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addPlayer.swift; sourceTree = "<group>"; };
+		DA09A34229954D6800DF2DCE /* PlayerList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerList.swift; sourceTree = "<group>"; };
+		DA788496299E79A60024F507 /* TestPopOver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPopOver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +104,11 @@
 		08525D2829952C4500E00B67 /* PlayerListView */ = {
 			isa = PBXGroup;
 			children = (
+				DA09A33C299541EE00DF2DCE /* addPlayer.swift */,
+				DA788496299E79A60024F507 /* TestPopOver.swift */,
 				08525D2929952C4500E00B67 /* PlayerListViewApp.swift */,
 				08525D2B29952C4500E00B67 /* PlayerListView.swift */,
+				DA09A34229954D6800DF2DCE /* PlayerList.swift */,
 				08525D5329952F5600E00B67 /* PlayerDataView.swift */,
 				08525D5529952FAF00E00B67 /* Player.swift */,
 				08525D2D29952C4700E00B67 /* Assets.xcassets */,
@@ -265,7 +274,10 @@
 			files = (
 				08525D5629952FAF00E00B67 /* Player.swift in Sources */,
 				08525D2C29952C4500E00B67 /* PlayerListView.swift in Sources */,
+				DA09A33D299541EE00DF2DCE /* addPlayer.swift in Sources */,
+				DA788497299E79A60024F507 /* TestPopOver.swift in Sources */,
 				08525D2A29952C4500E00B67 /* PlayerListViewApp.swift in Sources */,
+				DA09A34329954D6800DF2DCE /* PlayerList.swift in Sources */,
 				08525D5429952F5600E00B67 /* PlayerDataView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -6,12 +6,13 @@
 //
 
 import SwiftUI
-
 @main
 struct PlayerListViewApp: App {
+    @StateObject var playerList = PlayerList()
     var body: some Scene {
         WindowGroup {
             PlayerListView()
+                .environmentObject(playerList)
         }
     }
 }

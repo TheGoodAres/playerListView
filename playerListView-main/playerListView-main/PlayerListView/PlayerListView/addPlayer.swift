@@ -8,10 +8,9 @@
 import SwiftUI
 
 struct addPlayer: View {
-    @State var players: PlayerList
     @State var playerName: String = ""
     @State var bio: String = ""
-    @State var imageName: String = "undefined"
+    @State var imageName: String = "nondefined"
     var body: some View {
         
         VStack(alignment: .center) {
@@ -31,9 +30,9 @@ struct addPlayer: View {
             }
             
             Button("Add") {
-                players.addPlayer(player: Player(name: playerName, imageName: self.imageName, bio: self.bio))
+                playersData.append(Player(name: playerName, imageName: self.imageName, bio: self.bio))
                 print("added player")
-                for player in players.playerList {
+                for player in playersData {
                     print(player.name)
                 }
             }
@@ -41,4 +40,8 @@ struct addPlayer: View {
     }
 }
 
-
+struct addPlayer_Previews: PreviewProvider {
+    static var previews: some View {
+        addPlayer()
+    }
+}
